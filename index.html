@@ -23,102 +23,109 @@ src="https://www.facebook.com/tr?id=1378402490726537&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #e0f7fa, #e1bee7);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .elementor img {
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-    height: auto;
-    max-width: 100%;
-    border-radius: 90px;
-}
-    .card {
-      backdrop-filter: blur(12px);
-      background: rgba(255, 255, 255, 0.7);
-      border-radius: 1rem;
-      padding: 2rem;
-      max-width: 400px;
-      width: 100%;
-      text-align: center;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-    }
-    .btn-telegram {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 0.8rem 1.2rem;
-      border-radius: 0.75rem;
-      font-weight: bold;
-      color: white;
-      background: linear-gradient(90deg, #0088cc, #00bcd4);
-      transition: 0.3s;
-      width: 100%;
-    }
-    .btn-telegram:hover {
-      background: linear-gradient(90deg, #00bcd4, #0088cc);
-      transform: translateY(-2px);
-    }
-    .feature {
-      display: flex;
-      align-items: flex-start;
-      gap: 6px;
-      font-size: 0.95rem;
-    }
-  </style>
+<style>
+        body { 
+            background-color: #f8fafc; 
+            font-family: 'Inter', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .glass-card { 
+            background: #ffffff; 
+            border-radius: 24px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+        .btn-gradient {
+            background: linear-gradient(180deg, #0088cc 0%, #0077b5 100%);
+            box-shadow: 0 10px 25px rgba(0, 136, 204, 0.4);
+        }
+        .sio-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        /* Animation for trust badge */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .pulse-effect { animation: pulse 2s infinite; }
+    </style>
 </head>
-<body>
+<body class="flex flex-col items-center justify-start min-h-screen p-4 sm:p-6">
 
-  <div class="card">
-    <!-- Profile Image -->
-    <div class="w-32 h-32 mx-auto mb-4 ">
-      <img src="https://cdn5.telesco.pe/file/gvOvhWxbycRpSx6Va-Lj3hKJismus6oOv1TZf0KCLBGMqpi4KG0YfDB2NeTRqlH2FtECCgfraNnRZRX-Qi0nH1r_HXBRx7QfrQZ5pb0YppsaW2Em81eE_OZXMEYe8LNAG7ODPfThSlX8DHfWAWpAzs8wQu-IWOm7dCq9MJdTOo15XYthaJDxx8uSj8f-9YIjcMU_qKcR46nG4HVyzH3Mc_qn0Q-CHYFNyLwk3VScAYuXQCsq1w2Zp9SQ4AJqAjLUhZMHIVGobicYBhLhs34JNmeerrK1RIddHsuxBdhUJ8MdwpGPCjZzhtkL_Ae-9qG7iNQD_k3MsCXq9qvwtD6bvw.jpg" alt="Profile" class="w-full h-full rounded-full object-cover shadow-lg border-4 border-white rounded-xxl">
+    <div class="w-full max-w-[450px] space-y-6 text-center">
+        
+        <a href="https://t.me/+zO7qtOJ6alo4MmY9" target="_blank" class="btn-gradient w-full py-4 px-4 rounded-2xl text-white font-extrabold text-sm sm:text-base md:text-lg flex flex-col items-center justify-center transition-all active:scale-95">
+            <span class="flex items-center gap-2">
+                JOIN NOW FOR FREE TELEGRAM <span class="hidden sm:inline">CHANNEL</span> 🚀
+            </span>
+        </a>
+
+        <div class="relative inline-block mt-4">
+            <div class="w-32 h-32 sm:w-40 sm:h-40 rounded-full border-4 border-white shadow-2xl overflow-hidden mx-auto">
+                <img src="https://cdn5.telesco.pe/file/iVlC2Iv6RvKXTRX4z6smbMyBvWv8EZ_B62kheO1qeyj46z8DqaG1gpuV8G-k9T6H9uI-31OUHD7MGf91isHM8eRysGwlSKPlnULzg3WID7wUGCfvE-J_Kt9ZzFbx6x3qG9btnmsN3Qf6GMO-qQo7o5AuNM7yGrqiJ2zCqYbbPgvyXhFAsvYcSPQLPCIBJzWiFwBwJ9FLrQoqTTTPHXCu_2fd7APiIANv2qSmu9eLb2jXHOHkpwybQrxXsewSzuJNplfE_3XHKHfkWNmjmAwrtG7qRlAHesIDdCzLQB3JGUwwLKRRmUtk5qv5KPjaN7m1XWtVs2ghaZB7TFdTA_Ozbg.jpg" class="sio-img" alt="Trader Profile">
+            </div>
+            <div class="absolute bottom-2 right-2 bg-blue-500 border-2 border-white rounded-full p-1.5 w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center shadow-lg">
+                <i class="fas fa-check text-white text-xs sm:text-sm"></i>
+            </div>
+        </div>
+
+        <div class="px-2">
+            <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">BADSHAH BROKING</h1>
+            <p class="text-green-600 font-bold text-base sm:text-lg mt-1">India's Most Trusted Option Channel</p>
+        </div>
+
+        <div class="glass-card p-5 sm:p-7 text-left space-y-4 border border-slate-100 mx-1">
+            <div class="flex items-center gap-4 group">
+                <div class="bg-green-100 p-2 rounded-full group-hover:bg-green-200 transition-colors">
+                    <i class="fas fa-chart-line text-green-600"></i>
+                </div>
+                <p class="font-bold text-slate-700 text-sm sm:text-base leading-snug">
+                    <span class="text-black">95% Accuracy</span> in Nifty & BankNifty
+                </p>
+            </div>
+            
+            <div class="flex items-center gap-4 group">
+                <div class="bg-blue-100 p-2 rounded-full group-hover:bg-blue-200 transition-colors">
+                    <i class="fas fa-shield-alt text-blue-600"></i>
+                </div>
+                <p class="font-bold text-slate-700 text-sm sm:text-base leading-snug">
+                    <span class="text-black">1:4 Risk-Reward</span> | Daily 5-7 Calls
+                </p>
+            </div>
+
+            <div class="flex items-center gap-4 group">
+                <div class="bg-orange-100 p-2 rounded-full group-hover:bg-orange-200 transition-colors">
+                    <i class="fas fa-coins text-orange-600"></i>
+                </div>
+                <p class="font-bold text-slate-700 text-sm sm:text-base leading-snug">
+                    Target <span class="text-black">200+ Points</span> Daily Profits
+                </p>
+            </div>
+        </div>
+
+        <a href="https://t.me/+zO7qtOJ6alo4MmY9" target="_blank" class="btn-gradient w-full py-5 px-4 rounded-2xl text-white font-extrabold text-lg sm:text-xl flex flex-col items-center justify-center transition-all hover:brightness-110 active:scale-95 pulse-effect">
+            JOIN TELEGRAM FOR FREE 🚀
+            <span class="text-[10px] opacity-80 font-medium uppercase tracking-widest mt-1">Limited Slots Available</span>
+        </a>
+
+        <div class="text-[10px] sm:text-xs text-slate-400 leading-relaxed px-6 mt-4">
+            <p><span class="font-bold uppercase">Disclaimer:</span> Educational content only. Not SEBI registered. Trading involves financial risk. Always trade with proper risk management.</p>
+        </div>
+
+        <div class="flex justify-center pt-4 pb-10">
+            <div class="inline-flex items-center bg-gradient-to-r from-purple-600 via-purple-500 to-pink-500 text-white px-5 py-2.5 rounded-full text-[10px] sm:text-xs font-bold shadow-xl border border-white/20 hover:scale-105 transition-all">
+                <span class="mr-2">🔥</span>
+                Ads by 
+                <a href="https://t.me/+3XoqJNLxYHswNTc1" target="_blank" class="underline ml-1 mr-1 text-sky-200 decoration-sky-200/50 hover:text-white transition-colors">
+                   Sivi Ad Agency
+                </a> 
+                <span class="mx-1">•</span> Growth 🚀
+            </div>
+        </div>
+
     </div>
-
-    <!-- Heading -->
-    <h1 class="text-xl font-extrabold text-gray-800 mb-1">
-     BADSHAH BROKING OFFICIAL 💸🏆
-    </h1>
-
-    <!-- Experience -->
-    <p class="text-red-600 font-semibold mb-4">📊 Experience of 27 years❇️ 📊</p>
-
-    <!-- CTA Button -->
-    <a href="https://t.me/+zO7qtOJ6alo4MmY9" target="_blank" class="btn-telegram mb-6">
-
-      
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-        <path d="M16 8a8 8 0 1 1-16 0 8 8 0 0 1 16 0zM6.79 10.89l-.27 3.67c.39 0 .56-.17.77-.38l1.85-1.76 3.84 2.8c.7.39 1.19.19 1.36-.65l2.47-11.59c.22-.98-.35-1.37-1.05-1.14L1.13 6.24c-.95.37-.93.9-.17 1.14l3.57 1.11 8.3-5.23c.39-.26.74-.12.45.14L6.79 10.89z"/>
-      </svg>
-      JOIN TELEGRAM 💬
-    </a>
-
-    <!-- Features -->
-    <p class="text-red-600 font-bold mb-4">💎 DAILY PROFIT GURANTEE 💎</p>
-    <div class="text-left space-y-3 text-gray-800 mb-6">
-      <div class="feature">📊 <span><b>Live Daily Trades</b> – From my portfolio to yours!</span></div>
-      <div class="feature">🔥 <span><b>Exclusive Signals</b> – Get the same trades I take!</span></div>
-      <div class="feature">💯 <span><b>High Accuracy</b> – Consistent proven strategy!</span></div>
-      <div class="feature">💡 <span><b>Real-Time Updates</b> – Instant market alerts!</span></div>
-    </div>
-
-    <!-- Hindi Section -->
-    <h2 class="text-lg font-bold text-gray-800 mb-2">क्या आप ट्रेडिंग से पैसे कमाना चाहते हैं?</h2>
-    <p class="text-red-600 font-semibold">
-      अगर हां तो दिए गए टेलीग्राम बटन पर दबाएं !
-    </p>
-     <p style="text-align: center; margin-top: 20px; font-size: 14px; color: #5b6c84; font-weight: 500;">
-    Powered by <a href="#" style="color: #f39c12; text-decoration: none; font-weight: 600;">Shiviadsagency</a>
-</p>
-  </div>
 
 </body>
 </html>
